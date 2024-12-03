@@ -24,11 +24,7 @@ main{
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
     
 }
-.tile:hover {
-    background-color: #94887C; 
-    color: white;
-    cursor:pointer;               
-}
+
 
 
 .row{
@@ -51,4 +47,45 @@ main{
     font-size: 16px;
     border-radius:5px;
   }
+
+  #button:hover{
+    background-color: #a1da79; 
+    color: white;
+    cursor:pointer;               
+}
+
+#keyboard {
+    padding: 10px;
+    margin: auto; 
+    max-width: 800px; 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.keyRow {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%; 
+    max-width: 70px;
+    height: 50px;
+    font-size: calc(1vw + 10px); 
+    background-color: #c2c5ca;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.key:hover {
+    background-color: #A3AFBF;
+    transform: scale(1.1); 
+}
   
